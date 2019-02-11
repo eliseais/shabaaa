@@ -1,0 +1,72 @@
+
+
+.frogg
+{
+    width: 100%;
+}
+.frog
+{
+    width: 99vw;
+    margin-top: 20vw;
+    padding-left: 16vw;
+
+    animation-name: frog;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes frog
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-100px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+.box
+{
+    transform: translateY(100vh);
+    animation: floatUp 4s linear infinite alternate;
+}
+@keyframes floatUp
+{
+    0%
+    {
+        transform: translateY(20vh);
+    }
+    100%
+    {
+        transform: translateY(-20vh);
+    }
+}
+.boxouter
+{
+    position: relative;
+
+    display: inline-block;
+
+    animation: wiggle 1s ease-in-out infinite alternate;
+}
+@keyframes wiggle
+{
+    0%
+    {
+        transform: translateX(-50px);
+    }
+    100%
+    {
+        transform: translateX(50px);
+    }
+}
+.goo-defs
+{
+    width: 0;
+    height: 0;
+}
